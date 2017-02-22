@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+
+html {
+  background: #7A9E9F;
+}
 aside {
     position: fixed;
     width: 200px;
@@ -5,6 +10,8 @@ aside {
     right: 0;
     top: 0;
     background: #4F6367;
+    text-align: center;
+    padding: 20px;
 }
 
 main {
@@ -15,9 +22,63 @@ main {
     z-index: 1;
 }
 
+#circle {
+
+}
+
+.data-box {
+display: inline-block;
+/*flex-direction: row;
+align-content: center;*/
+
+}
+
+h1 {
+    border: 1px #B8D8D8 solid;
+    width: 150px;
+    background: #B8D8D8;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    color: #4F6367;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
 .content {
-    width: auto;
+    width: 90%;
     height: 100%;
     position: relative;
     background: #7A9E9F;
+}
+
+.calendar-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo {
+  margin-top: 35%;
+}
+
+.boxes {
+    width: 13%;
+    float: right;
+    margin-top: 15%;
+    color: #7A9E9F;
+    padding: 5px 3px;
+}
+
+.weekdays {
+  position: absolute;
+  left: 10px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-top: 5px 0px;
+    margin-top: 40px;
 }
