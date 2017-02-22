@@ -1,0 +1,23 @@
+aside {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background: #4F6367;
+}
+
+main {
+    margin-right: 200px;
+    height: 100%;
+    width: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    width: auto;
+    height: 100%;
+    position: relative;
+    background: #7A9E9F;
+}
