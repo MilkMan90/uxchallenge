@@ -3,6 +3,11 @@
 html {
   background: #7A9E9F;
 }
+
+nav {
+  display: none;
+}
+
 aside {
     position: fixed;
     width: 200px;
@@ -26,11 +31,15 @@ main {
 
 }
 
-.data-box {
-display: inline-block;
-/*flex-direction: row;
-align-content: center;*/
+.data-box-container{
+  text-align: center;
+}
 
+.data-box {
+  display: inline-block;
+  margin: 20px;
+  /*flex-direction: row;
+  align-content: center;*/
 }
 
 h1 {
@@ -53,32 +62,117 @@ h1 {
     background: #7A9E9F;
 }
 
-.calendar-box {
-  display: flex;
-  flex-direction: row;
-}
-
 .photo {
   margin-top: 35%;
 }
 
+.calendar-container{
+  margin-top: 80px;
+}
 .boxes {
     width: 13%;
     float: right;
-    margin-top: 15%;
     color: #7A9E9F;
     padding: 5px 3px;
-}
-
-.weekdays {
-  position: absolute;
-  left: 10px;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 25px;
-    margin-top: 5px 0px;
     margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media (max-width : 500px) {
+/* Styles */
+  html{
+    background: #4F6367;
+
+  }
+  aside {
+    display: none;
+  }
+
+  nav{
+    padding: 20px;
+    display: flex;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #4F6367;
+
+  }
+
+  .nav-button{
+    display: inline-block;
+    padding-top: 10px;
+    height: 30px;
+    border: 1px solid silver;
+    width: 100px;
+  }
+
+  main {
+      margin: auto;
+      background: #4F6367;
+      height: 100%;
+      z-index: 1;
+  }
+
+
+  .data-box-container{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #circle{
+    width: 100px;
+  }
+
+  .data-box {
+    display: inline-block;
+    margin: 10px;
+    /*flex-direction: row;
+    align-content: center;*/
+  }
+
+  h1 {
+      margin: 0 auto;
+  }
+
+  .content {
+    background: #4F6367;
+      width: 100%;
+      position: relative;
+  }
+
+  .photo {
+    width: 30%
+  }
+
+  .calendar-container{
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .boxes {
+    width: 30%;
+      float: none;
+      background: #4F6367;
+      padding: 0px;
+  }
+
+  h2 {
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-size: 25px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+  }
+
 }
